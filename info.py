@@ -14,7 +14,7 @@ def is_enabled(value, default):
 SESSION = "Media_search"
 API_ID = int(6129258)
 API_HASH = "9e4430929d7757512f864d160dac0a98"
-BOT_TOKEN = "5030500439:AAETW6k0E0oCf0NZ0PIZUOb8bFUT1n6umr4"
+BOT_TOKEN = "7120427654:AAHUG8McGiX7lqdGxq1QT0p74GH32gIytD4"
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -22,8 +22,8 @@ USE_CAPTION_FILTER = True
 PICS = (environ.get('PICS', 'https://telegra.ph/file/286801e61b556c4be376a.jpg')).split()
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5674020159').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001570289337 -1001369815641').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6791777555').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002094710881').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
@@ -37,7 +37,7 @@ DATABASE_NAME = "cluster0"
 COLLECTION_NAME = "Telegram_files"
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001792180012'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002094710881'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Filmcornerofficialgroup')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
